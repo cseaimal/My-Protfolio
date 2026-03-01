@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aimal Khan | Computer Sytem Engineer & Researcher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <style>
+        :root {
+            --bg-dark: #020617;
+            --card-bg: #0f172a;
+            --accent-blue: #38bdf8;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.1), transparent), 
+                        linear-gradient(180deg, #0f172a 0%, #020617 100%);
+            padding: 100px 0 60px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border: 4px solid var(--accent-blue);
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+            transition: 0.4s;
+        }
+
+        .profile-img:hover { transform: scale(1.05) rotate(3deg); }
+
+        /* Navigation Pills */
+        .nav-pills .nav-link {
+            color: var(--text-dim);
+            border: 1px solid rgba(255,255,255,0.1);
+            margin: 0 5px;
+            border-radius: 10px;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: var(--accent-blue);
+            color: #000;
+            font-weight: 700;
+        }
+
+        /* Cards & Experience */
+        .cv-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 24px;
+            transition: 0.3s;
+        }
+
+        .cv-card:hover {
+            border-color: var(--accent-blue);
+            box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.2);
+        }
+
+        .section-title {
+            color: var(--accent-blue);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .experience-item {
+            position: relative;
+            padding-left: 30px;
+            border-left: 1px solid rgba(56, 189, 248, 0.3);
+            margin-bottom: 30px;
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 11px;
+            height: 11px;
+            background: var(--accent-blue);
+            border-radius: 50%;
+        }
+
+        /* Skill Badges */
+        .skill-tag {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-dim);
+            padding: 5px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            margin: 3px;
+            display: inline-block;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Certifications List */
+        .cert-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.02);
+            margin-bottom: 10px;
+        }
+
+        .cert-icon {
+            font-size: 1.5rem;
+            color: var(--accent-blue);
+            width: 40px;
+            text-align: center;
+        }
+
+        footer { padding: 60px 0; border-top: 1px solid rgba(255,255,255,0.05); color: var(--text-dim); }
+        .siu-text { font-weight: 900; color: #f43f5e; letter-spacing: 2px; }
+    </style>
+</head>
+<body>
+
+<header class="hero-section text-center animate__animated animate__fadeIn">
+    <div class="container">
+        <img src="mypic.jpg" class="rounded-circle profile-img mb-4" alt="Aimal Khan">
+        <h1 class="display-3 fw-bold">AIMAL KHAN</h1>
+        <p class="text-info fs-5 mb-4">Computer Systems Engineer | IoT Researcher | Flutter Developer | Problem Solver</p>
+        
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="mailto:cseaimal@gmail.com" class="btn btn-outline-light rounded-pill px-4 btn-sm"><i class="fas fa-envelope me-2"></i>Email</a>
+            <a href="https://www.linkedin.com/in/cseaimal/" target="_blank" class="btn btn-outline-info rounded-pill px-4 btn-sm"><i class="fab fa-linkedin me-2"></i>LinkedIn</a>
+            <a href="https://github.com/cseaimal" target="_blank" class="btn btn-outline-light rounded-pill px-4 btn-sm"><i class="fab fa-github me-2"></i>GitHub</a>
+        </div>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-lg-8 animate__animated animate__fadeInLeft">
+            
+            <div class="cv-card">
+                <h5 class="section-title">01. Professional Summary</h5>
+                <p class="lead" style="font-size: 1.1rem; color: var(--text-dim);">
+                    Currently pursuing <strong>BS Computer Systems Engineering</strong> at <strong>UET Peshawar</strong>. 
+                    Specializing in <strong>Flutter</strong> and <strong>Embedded Systems</strong>, I bridge the gap between high-level mobile apps and low-level hardware integration.
+                </p>
+                <div class="mt-3">
+                    <span class="skill-tag">Team Collaboration</span>
+                    <span class="skill-tag">Agile Development</span>
+                    <span class="skill-tag">Communication</span>
+                </div>
+            </div>
+
+            <div class="cv-card">
+                <h5 class="section-title">02. Work History</h5>
+                
+                <div class="experience-item">
+                    <h6 class="fw-bold mb-0">Undergraduate Research Assistant</h6>
+                    <small class="text-info">SID Lab - UET Peshawar | Jan 2026 – Present</small>
+                    <p class="small text-dim mt-2">Developing hardware-software integration for embedded systems while exploring emerging technologies in IoT.</p>
+                    <div class="skill-tag">Management</div> <div class="skill-tag">Embedded Systems</div>
+                </div>
+
+                <div class="experience-item">
+                    <h6 class="fw-bold mb-0">Apexian Campus Leader</h6>
+                    <small class="text-info">Apexa | Jan 2026 – Present</small>
+                    <p class="small text-dim mt-2">Leading initiatives for an AI-powered self-enablement platform for students.</p>
+                    <div class="skill-tag">Brand Ambassadorship</div> <div class="skill-tag">Campus Management</div>
+                </div>
+
+                <div class="experience-item">
+                    <h6 class="fw-bold mb-0">Flutter Developer</h6>
+                    <small class="text-info">NeuroApp | Dec 2025 – Present</small>
+                    <p class="small text-dim mt-2">Contributing to Flutter-based application development with a focus on UI consistency and performance.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h6 class="fw-bold mb-0">Module Lead</h6>
+                    <small class="text-info">Natives (USAID Initiative) | Jul 2023 – Sep 2023</small>
+                    <p class="small text-dim mt-2">Designed sports-based mobilization activities for Land Registration initiatives in merged districts.</p>
+                    <div class="skill-tag">Leadership Management</div>
+                </div>
+            </div>
+
+            <div class="cv-card">
+                <h5 class="section-title">03. Academic Projects</h5>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="p-3 border border-secondary rounded h-100">
+                            <h6 class="fw-bold"><i class="fas fa-gamepad me-2 text-info"></i>Pokémon Game</h6>
+                            <p class="small text-dim mb-0">Flutter-based themed game with character selection and responsive UI.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 border border-secondary rounded h-100">
+                            <h6 class="fw-bold"><i class="fas fa-microchip me-2 text-info"></i>MIPS Calculator</h6>
+                            <p class="small text-dim mb-0">Implemented backend logic in MIPS assembly with a Python frontend.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 border border-secondary rounded h-100">
+                            <h6 class="fw-bold"><i class="fas fa-list me-2 text-info"></i>Task Scheduler</h6>
+                            <p class="small text-dim mb-0">Terminal-based scheduler in C using pthreads and ncurses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 animate__animated animate__fadeInRight">
+            
+            <div class="cv-card">
+                <h5 class="section-title">Technical Toolkit</h5>
+                <h6 class="small fw-bold text-info mt-3">Mobile & Web</h6>
+                <p class="mb-2">Flutter, Dart, HTML, CSS</p>
+                
+                <h6 class="small fw-bold text-info mt-3">Languages</h6>
+                <p class="mb-2">C, C++, Python</p>
+                
+                <h6 class="small fw-bold text-info mt-3">Systems & Tools</h6>
+                <p class="mb-0">Linux, Git, GitHub, Firebase, VS Code</p>
+            </div>
+
+            <div class="cv-card">
+                <h5 class="section-title">Certifications</h5>
+                
+                <div class="cert-item">
+                    <i class="fab fa-google cert-icon"></i>
+                    <div>
+                        <h6 class="mb-0 fw-bold small">UX Design Foundations</h6>
+                        <small class="text-dim">Google | Aug 2025</small>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <i class="fas fa-brain cert-icon"></i>
+                    <div>
+                        <h6 class="mb-0 fw-bold small">HCIA-AI Certified Professional</h6>
+                        <small class="text-dim">Huawei | Nov 2025</small>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <i class="fas fa-wave-square cert-icon"></i>
+                    <div>
+                        <h6 class="mb-0 fw-bold small">MATLAB Signal Processing</h6>
+                        <small class="text-dim">MathWorks | Dec 2025</small>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <i class="fas fa-wifi cert-icon"></i>
+                    <div>
+                        <h6 class="mb-0 fw-bold small">IoT for Everyone</h6>
+                        <small class="text-dim">Coursera | Aug 2025</small>
+                    </div>
+                </div>
+
+                <div class="cert-item">
+                    <i class="fas fa-network-wired cert-icon"></i>
+                    <div>
+                        <h6 class="mb-0 fw-bold small">HCIA-Datacom V1.0</h6>
+                        <small class="text-dim">Huawei | Aug 2025</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-card bg-info text-dark">
+                <h5 class="fw-bold mb-2"><i class="fas fa-graduation-cap me-2"></i>Education</h5>
+                <h6 class="mb-0 fw-bold">UET Peshawar</h6>
+                <p class="small mb-2">BS Computer Systems Eng. (2023-2027)</p>
+                <hr class="my-2 border-dark opacity-10">
+                <h6 class="mb-0 fw-bold">Islamia College Peshawar</h6>
+                <p class="small mb-0">FSc Pre-Engineering | Grade A+</p>
+            </div>
+
+            <div class="cv-card">
+                <h5 class="section-title">Leadership</h5>
+                <ul class="list-unstyled small text-dim">
+                    <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i>Executive Member, Computer Society</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i>Core Member, MLSA UETP</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i>Lead Organizer, DCSE Sports Week 2025</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-1">Crafted for Excellence &bull; Aimal Khan 2026</p>
+        <p class="siu-text h4 mt-3">All Rights Reserved by Aimal khan </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
